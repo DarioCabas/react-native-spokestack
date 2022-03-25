@@ -13,7 +13,7 @@ import java.io.File
 import java.io.FileOutputStream
 import java.net.URL
 
-class Downloader(private val context: Context, private val allowCellular: true, private val refreshModels: Boolean) {
+class Downloader(private val context: Context, private val allowCellular: Boolean = true, private val refreshModels: Boolean) {
   allowCellular = true
   private val logTag = "Spokestack"
   private val relocalhost = Regex("^http://localhost")
